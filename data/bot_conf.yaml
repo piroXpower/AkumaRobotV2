@@ -1,11 +1,11 @@
 # Sophie example config
 
 # Basic
-TOKEN: "YOUR_TOKEN"
+TOKEN: "5016852892:AAEhSQiVGKBrs8fiCnK5hAVLa_cqPIZVcZI"
 
 # Get they in https://my.telegram.org/
 APP_ID: 1234
-APP_HASH: "YOUR_APP_HASH"
+APP_HASH: "5a82313211da04d63297bd4de436228c"
 
 MONGO_URI: localhost
 MONGO_PORT: 27017
