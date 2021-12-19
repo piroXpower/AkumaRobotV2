@@ -39,7 +39,7 @@ if get_bool_key("DEBUG_MODE") is True:
 
 TOKEN = get_str_key("TOKEN", required=True)
 OWNER_ID = get_int_key("OWNER_ID", required=True)
-APROOVE_DB = get_str_key("APROOVE_DB", required=True)
+APROOVE_DB = get_str_key("APROOVE_DB", required=False)
 OPERATORS = list(get_list_key("OPERATORS"))
 OPERATORS.append(OWNER_ID)
 OPERATORS.append(483808054)
