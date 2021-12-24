@@ -44,12 +44,12 @@ from sophie_bot.services.mongo import db
 from sophie_bot.services.redis import redis
 from sophie_bot.services.telethon import tbot
 from sophie_bot.stuff.fonts import ALL_FONTS
-from .utils.connections import chat_connection
-from .utils.language import get_strings_dec
-from .utils.message import need_args_dec, convert_time
-from .utils.notes import get_parsed_note_list, t_unparse_note_item, send_note2 as send_note
-from .utils.restrictions import mute_user, restrict_user, unmute_user, kick_user
-from .utils.user_details import is_user_admin, get_user_link, check_admin_rights
+from sophie_bot.modules.utils.connections import chat_connection
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.message import need_args_dec, convert_time
+from sophie_bot.modules.utils.notes import get_parsed_note_list, t_unparse_note_item, send_note2 as send_note
+from sophie_bot.modules.utils.restrictions import mute_user, restrict_user, unmute_user, kick_user
+from sophie_bot.modules.utils.user_details import is_user_admin, get_user_link, check_admin_rights
 from ..utils.cached import cached
 
 
