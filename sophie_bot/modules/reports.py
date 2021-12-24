@@ -20,10 +20,10 @@
 from sophie_bot.decorator import register
 from sophie_bot.services.mongo import db
 
-from .utils.connections import chat_connection
-from .utils.disable import disableable_dec
-from .utils.language import get_strings_dec
-from .utils.user_details import get_admins_rights, get_user_link, is_user_admin
+from sophie_bot.modules.utils.connections import chat_connection
+from sophie_bot.modules.utils.disable import disableable_dec
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.user_details import get_admins_rights, get_user_link, is_user_admin
 
 
 @register(regexp='^@admin$')
