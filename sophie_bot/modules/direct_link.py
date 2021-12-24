@@ -21,10 +21,10 @@ from bs4 import BeautifulSoup
 
 from sophie_bot.decorator import register
 
-from .utils.disable import disableable_dec
-from .utils.http import http
-from .utils.language import get_strings_dec
-from .utils.message import get_arg, get_cmd
+from sophie_bot.modules.utils.disable import disableable_dec
+from sophie_bot.modules.utils.http import http
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.message import get_arg, get_cmd
 
 
 @register(cmds="direct")
