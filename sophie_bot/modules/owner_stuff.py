@@ -29,11 +29,11 @@ from sophie_bot.modules import LOADED_MODULES
 from sophie_bot.services.mongo import db, mongodb
 from sophie_bot.services.redis import redis
 from sophie_bot.services.telethon import tbot
-from .utils.covert import convert_size
-from .utils.language import get_strings_dec
-from .utils.message import need_args_dec
-from .utils.notes import BUTTONS, get_parsed_note_list, t_unparse_note_item, send_note
-from .utils.term import chat_term
+from sophie_bot.modules.utils.covert import convert_size
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.message import need_args_dec
+from sophie_bot.modules.utils.notes import BUTTONS, get_parsed_note_list, t_unparse_note_item, send_note
+from sophie_bot.modules.utils.term import chat_term
 
 
 @register(cmds='allcommands', is_op=True)
