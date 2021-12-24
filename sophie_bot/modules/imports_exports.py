@@ -31,8 +31,8 @@ from sophie_bot import OPERATORS, bot
 from sophie_bot.decorator import register
 from sophie_bot.services.redis import redis
 from . import LOADED_MODULES
-from .utils.connections import chat_connection
-from .utils.language import get_strings_dec
+from sophie_bot.modules.utils.connections import chat_connection
+from sophie_bot.modules.utils.language import get_strings_dec
 
 VERSION = 5
 
