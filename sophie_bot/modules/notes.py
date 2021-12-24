@@ -36,12 +36,12 @@ from sophie_bot.decorator import register
 from sophie_bot.services.mongo import db
 from sophie_bot.services.redis import redis
 from sophie_bot.services.telethon import tbot
-from .utils.connections import chat_connection, set_connected_command
-from .utils.disable import disableable_dec
-from .utils.language import get_strings_dec, get_string
-from .utils.message import get_arg, need_args_dec
-from .utils.notes import BUTTONS, ALLOWED_COLUMNS, get_parsed_note_list, t_unparse_note_item, send_note
-from .utils.user_details import get_user_link
+from sophie_bot.modules.utils.connections import chat_connection, set_connected_command
+from sophie_bot.modules.utils.disable import disableable_dec
+from sophie_bot.modules.utils.language import get_strings_dec, get_string
+from sophie_bot.modules.utils.message import get_arg, need_args_dec
+from sophie_bot.modules.utils.notes import BUTTONS, ALLOWED_COLUMNS, get_parsed_note_list, t_unparse_note_item, send_note
+from sophie_bot.modules.utils.user_details import get_user_link
 
 RESTRICTED_SYMBOLS_IN_NOTENAMES = [':', '**', '__', '`', '#', '"', '[', ']', "'", '$', '||']
 
