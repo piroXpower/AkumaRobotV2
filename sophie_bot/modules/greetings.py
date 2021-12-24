@@ -43,7 +43,7 @@ from sophie_bot.services.apscheduller import scheduler
 from sophie_bot.services.mongo import db
 from sophie_bot.services.redis import redis
 from sophie_bot.services.telethon import tbot
-from sophie_bot.stuff.fonts import ALL_FONTS
+#from sophie_bot.stuff.fonts import ALL_FONTS
 from sophie_bot.modules.utils.connections import chat_connection
 from sophie_bot.modules.utils.language import get_strings_dec
 from sophie_bot.modules.utils.message import need_args_dec, convert_time
