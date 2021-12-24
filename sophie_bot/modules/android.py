@@ -27,12 +27,12 @@ from httpx import TimeoutException
 from sophie_bot import decorator
 from sophie_bot.decorator import register
 
-from .utils.android import GetDevice
-from .utils.covert import convert_size
-from .utils.disable import disableable_dec
-from .utils.http import http
-from .utils.language import get_strings_dec
-from .utils.message import get_arg, get_cmd
+from sophie_bot.modules.utils.android import GetDevice
+from sophie_bot.modules.utils.covert import convert_size
+from sophie_bot.modules.utils.disable import disableable_dec
+from sophie_bot.modules.utils.http import http
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.message import get_arg, get_cmd
 
 # Commands /evo and /los ported from Haruka Aya
 # Commands /twrp, /samcheck and /samget ported from Samsung Geeks
