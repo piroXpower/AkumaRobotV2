@@ -28,12 +28,12 @@ from sophie_bot import BOT_ID, bot
 from sophie_bot.decorator import register
 from sophie_bot.services.redis import redis
 from sophie_bot.services.telethon import tbot
-from .misc import customise_reason_finish, customise_reason_start
-from .utils.connections import chat_connection
-from .utils.language import get_strings_dec
-from .utils.message import InvalidTimeUnit, get_cmd, convert_time
-from .utils.restrictions import kick_user, mute_user, unmute_user, ban_user, unban_user
-from .utils.user_details import get_user_dec, get_user_link, is_user_admin, get_user_and_text_dec
+from sophie_bot.modules.misc import customise_reason_finish, customise_reason_start
+from sophie_bot.modules.utils.connections import chat_connection
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.message import InvalidTimeUnit, get_cmd, convert_time
+from sophie_bot.modules.utils.restrictions import kick_user, mute_user, unmute_user, ban_user, unban_user
+from sophie_bot.modules.utils.user_details import get_user_dec, get_user_link, is_user_admin, get_user_and_text_dec
 from sophie_bot import APROOVE_DB as MONGO_DB_URI
 from pymongo import MongoClient
 
