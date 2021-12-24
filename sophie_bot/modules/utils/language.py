@@ -3,9 +3,9 @@ import os
 import yaml
 from babel.core import Locale
 
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.utils.logger import log
+from sophie_bot.services.mongo import db
+from sophie_bot.services.redis import redis
+from sophie_bot.utils.logger import log
 
 LANGUAGES = {}
 
