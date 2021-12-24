@@ -24,6 +24,8 @@ from contextlib import suppress
 from datetime import datetime
 from typing import Optional, Union
 
+from aiogram.types import Message
+
 from aiogram.dispatcher.filters.builtin import CommandStart
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.types import CallbackQuery, ContentType, Message
