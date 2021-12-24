@@ -25,9 +25,9 @@ from jikanpy import AioJikan
 
 from sophie_bot.decorator import register
 
-from .utils.disable import disableable_dec
-from .utils.language import get_strings_dec
-from .utils.message import get_args_str, need_args_dec
+from sophie_bot.modules.utils.disable import disableable_dec
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.message import get_args_str, need_args_dec
 
 
 def t(milliseconds: int) -> str:
