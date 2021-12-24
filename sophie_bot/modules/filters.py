@@ -39,10 +39,10 @@ from sophie_bot.modules import LOADED_MODULES
 from sophie_bot.services.mongo import db
 from sophie_bot.services.redis import redis
 from sophie_bot.utils.logger import log
-from .utils.connections import chat_connection, get_connected_chat
-from .utils.language import get_strings_dec, get_string
-from .utils.message import need_args_dec, get_args_str
-from .utils.user_details import is_user_admin, is_chat_creator
+from sophie_bot.modules.utils.connections import chat_connection, get_connected_chat
+from sophie_bot.modules.utils.language import get_strings_dec, get_string
+from sophie_bot.modules.utils.message import need_args_dec, get_args_str
+from sophie_bot.modules.utils.user_details import is_user_admin, is_chat_creator
 
 filter_action_cp = CallbackData('filter_action_cp', 'filter_id')
 filter_remove_cp = CallbackData('filter_remove_cp', 'id')
