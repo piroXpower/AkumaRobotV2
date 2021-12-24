@@ -13,7 +13,6 @@
 
 from datetime import timedelta
 
-
 # elif raw_button[1] == 'note':
 # t = InlineKeyboardButton(raw_button[0], callback_data='get_note_{}_{}'.format(chat_id, raw_button[2]))
 # elif raw_button[1] == 'alert':
@@ -27,41 +26,53 @@ class InvalidTimeUnit(Exception):
 
 
 def get_arg(message):
-    return message.get_args().split(' ')[0]
+    try:
+        return message.get_args().split()[0]
+    except IndexError:
+        return ""
 
 
 def get_args(message):
-    return message.get_args().split(' ')
+    args = message.get_args().split()
+    if args is None:
+        # getting args from non-command
+        args = message.text.split()
+    return args
+
+
+def get_args_str(message):
+    return " ".join(get_args(message))
 
 
 def get_cmd(message):
-    cmd = message.get_command().lower()[1:].split('@')[0]
+    cmd = message.get_command().lower()[1:].split("@")[0]
     return cmd
 
 
 def convert_time(time_val):
-    if not any(time_val.endswith(unit) for unit in ('m', 'h', 'd')):
+    if not any(time_val.endswith(unit) for unit in ("m", "h", "d")):
         raise TypeError
 
     time_num = int(time_val[:-1])
     unit = time_val[-1]
     kwargs = {}
 
-    if unit == 'm':
-        kwargs['minutes'] = time_num
-        unit_str = 'minutes'
-    elif unit == 'h':
-        kwargs['hours'] = time_num
-        unit_str = 'hours'
-    elif unit == 'd':
-        kwargs['days'] = time_num
-        unit_str = 'days'
+    if unit == "m":
+        kwargs["minutes"] = time_num
+    elif unit == "h":
+        kwargs["hours"] = time_num
+    elif unit == "d":
+        kwargs["days"] = time_num
     else:
         raise InvalidTimeUnit()
 
     val = timedelta(**kwargs)
 
     return val
+
+
+def convert_timedelta(time):
+    return {"days": time.days, "seconds": time.seconds}
 
 
 def need_args_dec(num=1):
@@ -71,7 +82,7 @@ def need_args_dec(num=1):
             if len(message.text.split(" ")) > num:
                 return await func(*args, **kwargs)
             else:
-                await message.reply("No enoff args!")
+                await message.reply("Give me args!")
 
         return wrapped_1
 
