@@ -34,12 +34,12 @@ from sophie_bot.services.telethon import tbot
 from sophie_bot import BOT_ID, bot
 from sophie_bot.decorator import register
 from sophie_bot.services.mongo import db
-from .misc import customise_reason_start, customise_reason_finish
-from .utils.connections import chat_connection
-from .utils.language import get_strings_dec
-from .utils.message import convert_time, InvalidTimeUnit
-from .utils.restrictions import ban_user, mute_user
-from .utils.user_details import (
+from sophie_bot.modules.misc import customise_reason_start, customise_reason_finish
+from sophie_bot.modules.utils.connections import chat_connection
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.message import convert_time, InvalidTimeUnit
+from sophie_bot.modules.utils.restrictions import ban_user, mute_user
+from sophie_bot.modules.utils.user_details import (
     get_user_and_text_dec, get_user_dec,
     get_user_link, is_user_admin
 )
