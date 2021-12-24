@@ -1,13 +1,13 @@
 # Sophie example config
 
 # Basic
-TOKEN: "5016852892:AAEhSQiVGKBrs8fiCnK5hAVLa_cqPIZVcZI"
+TOKEN: "5016852892:AAH-Bz5eAfDu3gz2Hj3vKft6o2VIwe_8M-4"
 
 # Get they in https://my.telegram.org/
-APP_ID: 1234
+APP_ID: "3898418"
 APP_HASH: "5a82313211da04d63297bd4de436228c"
 
-MONGO_URI: localhost
+MONGO_URI: "mongodb+srv://ZAID:ZAID@cluster0.c4wtt.mongodb.net/ZAID?retryWrites=true&w=majority"
 MONGO_PORT: 27017
 MONGO_DB: 'sophie'
 
