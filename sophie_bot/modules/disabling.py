@@ -21,10 +21,10 @@ from aiogram.types.inline_keyboard import InlineKeyboardMarkup, InlineKeyboardBu
 
 from sophie_bot.decorator import register, COMMANDS_ALIASES
 from sophie_bot.services.mongo import db
-from .utils.connections import chat_connection
-from .utils.disable import DISABLABLE_COMMANDS, disableable_dec
-from .utils.language import get_strings_dec
-from .utils.message import get_arg, need_args_dec
+from sophie_bot.modules.utils.connections import chat_connection
+from sophie_bot.modules.utils.disable import DISABLABLE_COMMANDS, disableable_dec
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.message import get_arg, need_args_dec
 
 
 @register(cmds="disableable")
