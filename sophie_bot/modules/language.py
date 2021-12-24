@@ -25,8 +25,8 @@ from aiogram.utils.exceptions import MessageNotModified
 
 from sophie_bot.decorator import register
 from sophie_bot.services.mongo import db
-from .utils.language import LANGUAGES, get_strings_dec, change_chat_lang, get_chat_lang_info, get_strings
-from .utils.message import get_arg
+from sophie_bot.modules.utils.language import LANGUAGES, get_strings_dec, change_chat_lang, get_chat_lang_info, get_strings
+from sophie_bot.modules.utils.message import get_arg
 
 select_lang_cb = CallbackData('select_lang_cb', 'lang', 'back_btn')
 translators_lang_cb = CallbackData('translators_lang_cb', 'lang')
