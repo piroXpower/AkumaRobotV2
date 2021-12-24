@@ -14,7 +14,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 from sophie_bot import OPERATORS, bot
 from sophie_bot.services.mongo import db
-from sophie_bot.services.redis import redis, rw
+from sophie_bot.services.redis import redis
 from sophie_bot.services.telethon import tbot
 from .message import get_arg
 
