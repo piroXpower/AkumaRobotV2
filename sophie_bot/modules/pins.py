@@ -21,9 +21,9 @@ from aiogram.utils.exceptions import BadRequest
 
 from sophie_bot import bot
 from sophie_bot.decorator import register
-from .utils.connections import chat_connection
-from .utils.language import get_strings_dec
-from .utils.message import get_arg
+from sophie_bot.modules.utils.connections import chat_connection
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.message import get_arg
 
 
 @register(cmds="unpin", user_can_pin_messages=True, bot_can_pin_messages=True)
