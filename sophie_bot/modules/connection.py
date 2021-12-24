@@ -30,11 +30,11 @@ from sophie_bot import bot
 from sophie_bot.decorator import register
 from sophie_bot.services.mongo import db
 from sophie_bot.services.redis import redis
-from .utils.connections import chat_connection, set_connected_chat, get_connection_data
-from .utils.language import get_strings_dec
-from .utils.message import get_arg
-from .utils.notes import BUTTONS
-from .utils.user_details import get_chat_dec, is_user_admin
+from sophie_bot.modules.utils.connections import chat_connection, set_connected_chat, get_connection_data
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.message import get_arg
+from sophie_bot.modules.utils.notes import BUTTONS
+from sophie_bot.modules.utils.user_details import get_chat_dec, is_user_admin
 
 connect_to_chat_cb = CallbackData('connect_to_chat_cb', 'chat_id')
 
