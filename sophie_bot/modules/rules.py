@@ -23,10 +23,10 @@ from aiogram.dispatcher.filters import CommandStart
 
 from sophie_bot.decorator import register
 from sophie_bot.services.mongo import db
-from .utils.connections import chat_connection
-from .utils.disable import disableable_dec
-from .utils.language import get_strings_dec
-from .utils.notes import (
+from sophie_bot.modules.utils.connections import chat_connection
+from sophie_bot.modules.utils.disable import disableable_dec
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.notes import (
     ALLOWED_COLUMNS, BUTTONS, get_parsed_note_list,
     send_note, t_unparse_note_item
 )
