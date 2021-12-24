@@ -23,12 +23,12 @@ from aiogram.utils.exceptions import BadRequest, MessageNotModified, MessageToDe
 
 from sophie_bot import decorator
 from sophie_bot.decorator import register
-from .utils.disable import disableable_dec
-from .utils.language import get_strings_dec
-from .utils.notes import get_parsed_note_list, send_note, t_unparse_note_item
-from .utils.user_details import is_user_admin
-from .utils.message import get_args_str, need_args_dec
-from .utils.http import http
+from sophie_bot.modules.utils.disable import disableable_dec
+from sophie_bot.modules.utils.language import get_strings_dec
+from sophie_bot.modules.utils.notes import get_parsed_note_list, send_note, t_unparse_note_item
+from sophie_bot.modules.utils.user_details import is_user_admin
+from sophie_bot.modules.utils.message import get_args_str, need_args_dec
+from sophie_bot.modules.utils.http import http
 
 
 @register(cmds='buttonshelp', no_args=True, only_pm=True)
